@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Internet Usage Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Global Internet Usage by Country in 2021</h1>
+    <h2 style="text-align: center;">
+        <p>🌍 As your mouse glides over each country on the map, you'll find the percentage of internet users.</p>
+        <p>💡 This digital journey allows us to experience the spread of technology and highlights the current state of global digital divide.</p>
+        <p>📊 The varying shades of blue indicate the levels of internet usage. Countries without data are shown in gray, reminding us that the absence of data is also a part of the information.</p>
+    </h2>    
+    <div id="map"></div>
+    <div id="tooltip" style="position: absolute; opacity: 0; pointer-events: none; background-color: white; border: 1px solid #ccc; padding: 10px; border-radius: 5px;"></div>
+    <div id="description">
+        <h3>Project Overview</h3>
+        <p><strong>Compelling Question:</strong> How does different country has different internet user percentage in 2021?</p>
+        <p>In developing our interactive visualization of global internet usage by country for the year 2021, we aimed to present data in a way that is both intuitive and informative. We chose to use a choropleth map as our primary visual encoding technique because of its effectiveness in displaying geographical data across different regions, which allow users to easily compare internet usage rates across countries.</p>
+        <p>For our interaction techniques, we implemented tooltips, color coding, and a legend to enhance user engagement and understanding. Tooltips provide detailed information about internet usage for each country when the user hovers over a country on the map. This details-on-demand approach helps keep the interface clean while providing access to data as needed. We considered using other visual representations like bar graphs or pie charts to show the data distribution but decided against these as they would not provide the geographical context that is critical for our data set. A choropleth map offered a direct visualization of the data's spatial distribution. The choice of color was particularly important, and we opted for a range of blues. Lighter blues represent lower internet usage, while darker shades indicate higher usage.</p>
+        <p>It is worth mentioning that some of the country data are missing, so we used a contrastive color orange when the mouse is flipping on it to show the data for those missing country. When the mouse is not on it, it is grey colored.</p>
+        <p>The project was collaboratively developed by myself and my partner. I was responsible for sourcing the appropriate CSV dataset and GeoJSON file, and setting up the initial project environment, including the HTML, CSS, and JavaScript files necessary for our D3.js visualization. My partner focused on data cleaning, specifically isolating data from the year 2021 and narrowing it down to essential fields such as country and percentage of internet usage. This step was crucial to ensure that our visualization would be both accurate and performant. After the data was prepared, my partner also helped map these percentages onto our map to show the percentage data. This is also an important step for our webpage design. Meanwhile, I took on the tasks of integrating additional visual elements such as the title and legend, designing the chloropath map with blue color, change the countries' names in csv file to map with gson file, and refining the position and layout of the map and its components.</p>
+        <p>We each spent approximately 3-5 hours on our respective tasks. The most time-consuming part of the project was implementing the tooltip functionality. This required careful programming to ensure that it worked across different browsers and devices. In total, our project development took around 8-10 person-hours.</p>
+        <p>Through this project, we have gained insights into practical challenges of creating interactive data visualizations.</p>
+    </div>    
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+

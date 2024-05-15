@@ -1,0 +1,15 @@
+# DSC106-Project3-WriteUp
+First of all, our compelling question would be: How does different country has different internet user percertage in 2021? 
+
+In developing our interactive visualization of global internet usage by country for the year 2021, we aimed to present data in a way that is both intuitive and informative. We chose to use a choropleth map as our primary visual encoding technique because of its effectiveness in displaying geographical data across different regions, which allow users to easily compare internet usage rates across countries.
+
+For our interaction techniques, we implemented tooltips, color coding, and a legend to enhance user engagement and understanding. Tooltips provide detailed information about internet usage for each country when the user hovers over a country on the map. This details-on-demand approach helps keep the interface clean while providing access to data as needed. We considered using other visual representations like bar graphs or pie charts to show the data distribution but decided against these as they would not provide the geographical context that is critical for our data set. A choropleth map offered a direct visualization of the data's spatial distribution. The choice of color was particularly important, and we opted for a range of blues. Lighter blues represent lower internet usage, while darker shades indicate higher usage.
+
+It is worth mentioning that some of the country data are missing, so we used a contrastive color orange when mouse is flipping on it to show the data for those missing country. When the mouse is not on it, it is grey colored.
+
+The project was collaboratively developed by myself and my partner. I was responsible for sourcing the appropriate CSV dataset and GeoJSON file, and setting up the initial project environment, including the HTML, CSS, and JavaScript files necessary for our D3.js visualization. My partner focused on data cleaning, specifically isolating data from the year 2021 and narrowing it down to essential fields such as country and percentage of internet usage. This step was crucial to ensure that our visualization would be both accurate and performant. After the data was prepared, my partner also help map these percentages onto our choropleth map to show the percentage data. Meanwhile, I took on the tasks of integrating additional visual elements such as the title, adjusting the color path, and refining the position and layout of the map and its components. We also added a legend to aid in data interpretation, making it easier for users to understand the scale of internet usage across different countries.
+
+We each spent approximately 3-4 hours on our respective tasks. The most time-consuming part of the project was implementing the tooltip functionality. This required careful programming to ensure that it worked  across different browsers and devices. In total, our project development took around 6-8 person-hours. 
+
+Through this project, we have gained insights into practical challenges of creating interactive data visualizations.
+
