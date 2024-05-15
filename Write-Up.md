@@ -1,4 +1,4 @@
-# DSC106-Project3-WriteUp
+# DSC106-Project3-WriteUp（We include the write up in the web page too)
 First of all, our compelling question would be: How does different country has different internet user percertage in 2021? 
 
 In developing our interactive visualization of global internet usage by country for the year 2021, we aimed to present data in a way that is both intuitive and informative. We chose to use a choropleth map as our primary visual encoding technique because of its effectiveness in displaying geographical data across different regions, which allow users to easily compare internet usage rates across countries.
